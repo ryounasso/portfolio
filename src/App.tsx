@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import MyAvatar from './components/MyAvatar';
 import Navbar from './components/Navbar'
 import About from './components/About'
@@ -6,10 +6,16 @@ import Skills from './components/Skills'
 import Works from './components/Works'
 import Contact from './components/Contact';
 import ScrollUp from './utils/ScrollUp'
+import { Helmet } from 'react-helmet'
 
 const App: React.FC = () => {
+
   return (
     <>
+      <Helmet>
+        <title>portfolio</title>
+      </Helmet>
+      
       <section>
         <Navbar />
       </section>
