@@ -9,10 +9,30 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import Avatar from '@material-ui/core/Avatar'
 import FolderIcon from '@material-ui/icons/Folder'
 
+import imageWork1 from '../static/images/memochat.png';
+import imageWork2 from '../static/images/portfolio.jpg';
+import imageWork3 from '../static/images/todo.png';
+import imageWork4 from '../static/images/Auricle_authentication.png';
+import imageWork5 from '../static/images/calculator.jpg';
+import imageWork6 from '../static/images/blog.png';
+import { Card, CardContent, CardMedia } from '@material-ui/core'
+import { FullscreenExit } from '@material-ui/icons'
+import { findByLabelText } from '@testing-library/dom'
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: 770,
         maxWidth: '100%',
+    },
+
+    large: {
+        width: theme.spacing(20),
+        height: theme.spacing(20),
+    },
+
+    details: {
+        display : 'flex',
+        flexDirection : 'column',
     },
 }));
 
@@ -34,16 +54,94 @@ const Works: React.FC = () => {
                 <Box display='flex' justifyContent='center' p={1}>
                     <List className={classes.root}>
                         <ListItem>
-                            <ListItemLink href="#">
+                            <ListItemLink href="https://github.com/ryounasso/hackson_07">
                                 <ListItemAvatar>
-                                    <Avatar>
-                                        <FolderIcon />
+                                    <Avatar variant="square" className={classes.large} src={imageWork1}>
                                     </Avatar>
                                 </ListItemAvatar>
-                                <ListItemText primary='Work1' secondary='Work1です' />
+                                <ListItemText primary='memoChat' secondary='メモライクなチャットアプリです。' />
                             </ListItemLink>
                         </ListItem>
                     </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <List className={classes.root}>
+                        <ListItem>
+                            <ListItemLink href="#">
+                                <ListItemAvatar>
+                                    <Avatar variant="square" className={classes.large} src={imageWork2}>
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary='自作した気になれるポートフォリオ' secondary='シェルスクリプトで質問に答えるだけでポートフォリオが自動生成されます。' />
+                            </ListItemLink>
+                        </ListItem>
+                    </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <List className={classes.root}>
+                        <ListItem>
+                            <ListItemLink href="#">
+                                <ListItemAvatar>
+                                    <Avatar variant="square" className={classes.large} src={imageWork3}>
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary='レポート管理アプリ' secondary='大学の講義で出たレポートや課題を管理できます。' />
+                            </ListItemLink>
+                        </ListItem>
+                    </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <List className={classes.root}>
+                        <ListItem>
+                            <ListItemLink href="#">
+                                <ListItemAvatar>
+                                    <Avatar variant="square" className={classes.large} src={imageWork4}>
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary='耳形認証アプリ' secondary='耳の形で誰かを当てます。' />
+                            </ListItemLink>
+                        </ListItem>
+                    </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <List className={classes.root}>
+                        <ListItem>
+                            <ListItemLink href="#">
+                                <ListItemAvatar>
+                                    <Avatar variant="square" className={classes.large} src={imageWork5}>
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary='計算履歴が残る電卓' secondary='iPhone純正の電卓は計算履歴が残らないので、残る電卓を作りました。' />
+                            </ListItemLink>
+                        </ListItem>
+                    </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <List className={classes.root}>
+                        <ListItem>
+                            <ListItemLink href="#">
+                                <ListItemAvatar>
+                                    <Avatar variant="square" className={`${classes.large} ${classes.details}`} src={imageWork6}>
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary='ブログ' secondary='個人ブログです。' />
+                            </ListItemLink>
+                        </ListItem>
+                    </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                <Card className={classes.root}>
+                    <div className={classes.details}>
+                        <CardContent>
+                            <Typography variant="h5" component="div">memoChat</Typography>
+                        </CardContent>
+                        {/* <CardMedia
+                        className={classes.large}
+                        image = { imageWork4 }
+                        /> */}
+                        <img src='../static/images/Auricle_authentication.png'></img>
+                    </div>
+                </Card>
                 </Box>
             </Box>
         </>
