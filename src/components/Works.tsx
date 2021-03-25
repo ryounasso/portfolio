@@ -18,6 +18,7 @@ import imageWork6 from '../static/images/blog.png';
 import { Card, CardContent, CardMedia } from '@material-ui/core'
 import { FullscreenExit } from '@material-ui/icons'
 import { findByLabelText } from '@testing-library/dom'
+import { useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,6 +35,13 @@ const useStyles = makeStyles((theme) => ({
         display : 'flex',
         flexDirection : 'column',
     },
+
+    topic: {
+        fontSize: '30px',
+        '@media (max-width:400px)': {
+            fontSize: '20px',
+          },
+    },
 }));
 
 function ListItemLink(props: ListItemProps<'a', {button?: true}>){
@@ -47,7 +55,7 @@ const Works: React.FC = () => {
         <>
             <Box p={2}>
                 <Box display='flex' justifyContent='center' p={1}>
-                    <Typography variant='h3'>
+                    <Typography className={classes.topic} >
                         Works
                     </Typography>
                 </Box>
@@ -56,8 +64,7 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="https://github.com/ryounasso/hackson_07">
                                 <ListItemAvatar>
-                                    <Avatar variant="square" className={classes.large} src={imageWork1}>
-                                    </Avatar>
+                                    <Avatar variant="square" className={classes.large} src={imageWork1}></Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='memoChat' secondary='メモライクなチャットアプリです。' />
                             </ListItemLink>

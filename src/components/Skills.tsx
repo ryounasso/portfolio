@@ -10,6 +10,13 @@ const useStyles = makeStyles({
         width: 730,
         maxWidth: '100%'
     },
+
+    topic: {
+        fontSize: '30px',
+        '@media (max-width:400px)': {
+            fontSize: '20px',
+          },
+    },
 });
 
 const Skills: React.FC = () => {
@@ -19,7 +26,7 @@ const Skills: React.FC = () => {
         <>
             <Box p={2}>
                 <Box display='flex' justifyContent='center' p={1}>
-                    <Typography variant='h3'>
+                    <Typography className={classes.topic} variant='h3'>
                         Skills
                     </Typography>
                 </Box>
