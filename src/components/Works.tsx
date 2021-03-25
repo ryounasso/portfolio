@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '30px',
         '@media (max-width:400px)': {
             fontSize: '20px',
+            fontWeight: 'bolder',
           },
     },
 }));
