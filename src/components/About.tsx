@@ -7,7 +7,7 @@ const About: React.FC = () => {
         <>
             <Box p={2}>
                 <Box display='flex' justifyContent='center' p={1}>
-                    <Typography variant='h5'>
+                    <Typography variant='h3'>
                         About
                     </Typography>
                 </Box>

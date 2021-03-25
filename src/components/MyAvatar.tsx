@@ -28,7 +28,7 @@ const MyAvatar: React.FC = () => {
                 </Box>
             </Box>
             <Box display='flex' justifyContent='center'>
-                <Typography variant='h5'>
+                <Typography variant='h4'>
                     Ryota Wabuchi
                 </Typography>
             </Box>

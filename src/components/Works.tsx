@@ -47,7 +47,7 @@ const Works: React.FC = () => {
         <>
             <Box p={2}>
                 <Box display='flex' justifyContent='center' p={1}>
-                    <Typography variant='h5'>
+                    <Typography variant='h3'>
                         Works
                     </Typography>
                 </Box>
@@ -82,7 +82,7 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="#">
                                 <ListItemAvatar>
-                                    <Avatar variant="square" className={classes.large} src={imageWork3}>
+                                    <Avatar style={{ height: '15%' }}variant="square" className={classes.large} src={imageWork3}>
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='レポート管理アプリ' secondary='大学の講義で出たレポートや課題を管理できます。' />
@@ -95,7 +95,7 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="#">
                                 <ListItemAvatar>
-                                    <Avatar variant="square" className={classes.large} src={imageWork4}>
+                                    <Avatar style={{ height: '15%' }} variant="square" className={classes.large} src={imageWork4}>
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='耳形認証アプリ' secondary='耳の形で誰かを当てます。' />
@@ -108,7 +108,7 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="#">
                                 <ListItemAvatar>
-                                    <Avatar variant="square" className={classes.large} src={imageWork5}>
+                                    <Avatar style={{ height: '15%' }} variant="square" className={classes.large} src={imageWork5}>
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='計算履歴が残る電卓' secondary='iPhone純正の電卓は計算履歴が残らないので、残る電卓を作りました。' />
@@ -128,20 +128,6 @@ const Works: React.FC = () => {
                             </ListItemLink>
                         </ListItem>
                     </List>
-                </Box>
-                <Box display='flex' justifyContent='center' p={1}>
-                <Card className={classes.root}>
-                    <div className={classes.details}>
-                        <CardContent>
-                            <Typography variant="h5" component="div">memoChat</Typography>
-                        </CardContent>
-                        {/* <CardMedia
-                        className={classes.large}
-                        image = { imageWork4 }
-                        /> */}
-                        <img src='../static/images/Auricle_authentication.png'></img>
-                    </div>
-                </Card>
                 </Box>
             </Box>
         </>
