@@ -75,7 +75,7 @@ const Works: React.FC = () => {
                 <Box display='flex' justifyContent='center' p={1}>
                     <List className={classes.root}>
                         <ListItem>
-                            <ListItemLink href="#">
+                            <ListItemLink href="https://github.com/ryounasso/TechStudyGroup-hackathon-202008">
                                 <ListItemAvatar>
                                     <Avatar variant="square" className={classes.large} src={imageWork2}>
                                     </Avatar>
@@ -88,7 +88,7 @@ const Works: React.FC = () => {
                 <Box display='flex' justifyContent='center' p={1}>
                     <List className={classes.root}>
                         <ListItem>
-                            <ListItemLink href="#">
+                            <ListItemLink href="https://github.com/ryounasso/WinterHackason2020">
                                 <ListItemAvatar>
                                     <Avatar style={{ height: '15%' }}variant="square" className={classes.large} src={imageWork3}>
                                     </Avatar>
@@ -101,7 +101,7 @@ const Works: React.FC = () => {
                 <Box display='flex' justifyContent='center' p={1}>
                     <List className={classes.root}>
                         <ListItem>
-                            <ListItemLink href="#">
+                            <ListItemLink href="https://github.com/ryounasso/ear_hape_authentication">
                                 <ListItemAvatar>
                                     <Avatar style={{ height: '15%' }} variant="square" className={classes.large} src={imageWork4}>
                                     </Avatar>
@@ -114,7 +114,7 @@ const Works: React.FC = () => {
                 <Box display='flex' justifyContent='center' p={1}>
                     <List className={classes.root}>
                         <ListItem>
-                            <ListItemLink href="#">
+                            <ListItemLink href="https://github.com/ryounasso/calculater">
                                 <ListItemAvatar>
                                     <Avatar style={{ height: '15%' }} variant="square" className={classes.large} src={imageWork5}>
                                     </Avatar>
@@ -127,7 +127,7 @@ const Works: React.FC = () => {
                 <Box display='flex' justifyContent='center' p={1}>
                     <List className={classes.root}>
                         <ListItem>
-                            <ListItemLink href="#">
+                            <ListItemLink href="https://github.com/ryounasso/blog">
                                 <ListItemAvatar>
                                     <Avatar variant="square" className={`${classes.large} ${classes.details}`} src={imageWork6}>
                                     </Avatar>
