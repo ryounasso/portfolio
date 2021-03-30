@@ -19,6 +19,9 @@ import { Card, CardContent, CardMedia } from '@material-ui/core'
 import { FullscreenExit } from '@material-ui/icons'
 import { findByLabelText } from '@testing-library/dom'
 import { useMediaQuery } from '@material-ui/core';
+import { StylesProvider } from '@material-ui/core/styles';
+import styled from 'styled-components';
+import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,6 +32,8 @@ const useStyles = makeStyles((theme) => ({
     large: {
         width: theme.spacing(20),
         height: theme.spacing(20),
+        // backgroundSize : 'contain',
+        objectFit: 'contain',
     },
 
     details: {
@@ -44,6 +49,16 @@ const useStyles = makeStyles((theme) => ({
           },
     },
 }));
+
+const theme = createMuiTheme({
+    overrides: {
+        MuiAvatar: {
+        img: {
+            objectFit : 'contain',
+        },
+      },
+    },
+  })
 
 function ListItemLink(props: ListItemProps<'a', {button?: true}>){
     return <ListItem button component="a" {...props} />;
@@ -90,7 +105,7 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="https://github.com/ryounasso/WinterHackason2020">
                                 <ListItemAvatar>
-                                    <Avatar style={{ height: '15%' }}variant="square" className={classes.large} src={imageWork3}>
+                                    <Avatar variant="square" className={classes.large} src={imageWork3}>
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='レポート管理アプリ' secondary='大学の講義で出たレポートや課題を管理できます。' />
@@ -103,8 +118,10 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="https://github.com/ryounasso/ear_hape_authentication">
                                 <ListItemAvatar>
-                                    <Avatar style={{ height: '15%' }} variant="square" className={classes.large} src={imageWork4}>
+                                <MuiThemeProvider theme={theme}>
+                                    <Avatar variant="square" className={classes.large} src={imageWork4}>
                                     </Avatar>
+                                </MuiThemeProvider>
                                 </ListItemAvatar>
                                 <ListItemText primary='耳形認証アプリ' secondary='耳の形で誰かを当てます。' />
                             </ListItemLink>
@@ -116,7 +133,7 @@ const Works: React.FC = () => {
                         <ListItem>
                             <ListItemLink href="https://github.com/ryounasso/calculater">
                                 <ListItemAvatar>
-                                    <Avatar style={{ height: '15%' }} variant="square" className={classes.large} src={imageWork5}>
+                                    <Avatar variant="square" className={classes.large} src={imageWork5}>
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='計算履歴が残る電卓' secondary='iPhone純正の電卓は計算履歴が残らないので、残る電卓を作りました。' />
