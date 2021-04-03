@@ -15,6 +15,7 @@ import imageWork3 from '../static/images/todo.png';
 import imageWork4 from '../static/images/Auricle_authentication.png';
 import imageWork5 from '../static/images/calculator.jpg';
 import imageWork6 from '../static/images/blog.png';
+import imageWork7 from '../static/images/ca-wr-shop.png'
 import { Card, CardContent, CardMedia } from '@material-ui/core'
 import { FullscreenExit } from '@material-ui/icons'
 import { findByLabelText } from '@testing-library/dom'
@@ -150,6 +151,19 @@ const Works: React.FC = () => {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary='ブログ' secondary='個人ブログです。' />
+                            </ListItemLink>
+                        </ListItem>
+                    </List>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <List className={classes.root}>
+                        <ListItem>
+                            <ListItemLink href="https://ca-wr-shop.herokuapp.com/">
+                                <ListItemAvatar>
+                                    <Avatar variant="square" className={`${classes.large} ${classes.details}`} src={imageWork7}>
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary='ネットショップ' secondary='CyberAgentさんのインターンで作成したネットショップです。' />
                             </ListItemLink>
                         </ListItem>
                     </List>
