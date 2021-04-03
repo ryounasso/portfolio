@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
                                 Languages
                             </Typography>
                             <Typography color="textSecondary">
-                                JavaScript / Java / C / Python / TypeScript
+                                JavaScript / Java / C / Python / TypeScript / Sass
                             </Typography>
                         </CardContent>
                     </Card>
