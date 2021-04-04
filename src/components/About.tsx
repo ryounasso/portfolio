@@ -12,6 +12,9 @@ const useStyles = makeStyles({
             fontWeight: 'bolder',
           },
     },
+    contributionImage :{
+        maxWidth: '100%',
+    }
 });
 
 const About: React.FC = () => {
@@ -31,6 +34,9 @@ const About: React.FC = () => {
                         Tokushima Graduate School.<br />
                         From Ehime<br />
                     </Typography>
+                </Box>
+                <Box display='flex' justifyContent='center' p={1}>
+                    <img className={classes.contributionImage} src="https://grass-graph.moshimo.works/images/ryounasso.png"></img>
                 </Box>
             </Box>
         </>
