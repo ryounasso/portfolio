@@ -40,7 +40,7 @@ export default function FlutterModal() {
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="h2">
-            MemoChat
+            レポート管理アプリ
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             オンライン講義によって増えた課題を、まとめて管理することができるアプリです。
