@@ -7,23 +7,16 @@ import ListItem, { ListItemProps } from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
-import FolderIcon from "@material-ui/icons/Folder";
-
-import imageWork1 from "../static/images/memochat.png";
 import imageWork2 from "../static/images/portfolio.jpg";
-import imageWork3 from "../static/images/todo.png";
-import imageWork4 from "../static/images/Auricle_authentication.png";
-import imageWork5 from "../static/images/calculator.jpg";
-import imageWork6 from "../static/images/blog.png";
-import imageWork7 from "../static/images/ca-wr-shop.png";
 import imgGit from "../static/images/GitHub.png";
-import { Card, CardContent, CardMedia } from "@material-ui/core";
-import { FullscreenExit } from "@material-ui/icons";
-import { findByLabelText } from "@testing-library/dom";
-import { useMediaQuery } from "@material-ui/core";
-import { StylesProvider } from "@material-ui/core/styles";
-import styled from "styled-components";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+
+import Calculator from "./Cal/Calculator";
+import MemoChat from "./memoChat/MemoChat";
+import FlutterTodo from "./flutterTodo/FlutterTodo";
+import Blog from "./blog/Blog";
+import EarShape from "./earShape/EarShape";
+import Ca from "./ca/Ca";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -79,28 +72,7 @@ const Works: React.FC = () => {
         <Box display="flex" justifyContent="center" p={1}>
           <Typography className={classes.topic}>Works</Typography>
         </Box>
-        <Box display="flex" justifyContent="center" p={1}>
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar
-                  variant="square"
-                  className={classes.large}
-                  src={imageWork1}
-                ></Avatar>
-              </ListItemAvatar>
-              <ListItemText
-                primary="memoChat"
-                secondary="メモライクなチャットアプリです。"
-              />
-              <Box display="flex">
-                <ListItemLink href="https://github.com/ryounasso/hackson_07">
-                  <img alt="github" src={imgGit} className={classes.img} />
-                </ListItemLink>
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
+        <MemoChat />
         <Box display="flex" justifyContent="center" p={1}>
           <List className={classes.root}>
             <ListItem>
@@ -123,115 +95,11 @@ const Works: React.FC = () => {
             </ListItem>
           </List>
         </Box>
-        <Box display="flex" justifyContent="center" p={1}>
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar
-                  variant="square"
-                  className={classes.large}
-                  src={imageWork3}
-                ></Avatar>
-              </ListItemAvatar>
-              <ListItemText
-                primary="レポート管理アプリ"
-                secondary="大学の講義で出たレポートや課題を管理できます。"
-              />
-              <Box display="flex">
-                <ListItemLink href="https://github.com/ryounasso/WinterHackason2020">
-                  <img alt="github" src={imgGit} className={classes.img} />
-                </ListItemLink>
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
-        <Box display="flex" justifyContent="center" p={1}>
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemAvatar>
-                <MuiThemeProvider theme={theme}>
-                  <Avatar
-                    variant="square"
-                    className={classes.large}
-                    src={imageWork4}
-                  ></Avatar>
-                </MuiThemeProvider>
-              </ListItemAvatar>
-              <ListItemText
-                primary="耳形認証アプリ"
-                secondary="耳の形で誰かを当てます。"
-              />
-              <Box display="flex">
-                <ListItemLink href="https://github.com/ryounasso/ear_hape_authentication">
-                  <img alt="github" src={imgGit} className={classes.img} />
-                </ListItemLink>
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
-        <Box display="flex" justifyContent="center" p={1}>
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar
-                  variant="square"
-                  className={classes.large}
-                  src={imageWork5}
-                ></Avatar>
-              </ListItemAvatar>
-              <ListItemText
-                primary="計算履歴が残る電卓"
-                secondary="iPhone純正の電卓は計算履歴が残らないので、残る電卓を作りました。"
-              />
-              <Box display="flex">
-                <ListItemLink href="https://github.com/ryounasso/calculater">
-                  <img alt="github" src={imgGit} className={classes.img} />
-                </ListItemLink>
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
-        <Box display="flex" justifyContent="center" p={1}>
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar
-                  variant="square"
-                  className={`${classes.large} ${classes.details}`}
-                  src={imageWork6}
-                ></Avatar>
-              </ListItemAvatar>
-              <ListItemText primary="ブログ" secondary="個人ブログです。" />
-              <Box display="flex">
-                <ListItemLink href="https://github.com/ryounasso/blog">
-                  <img alt="github" src={imgGit} className={classes.img} />
-                </ListItemLink>
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
-        <Box display="flex" justifyContent="center" p={1}>
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar
-                  variant="square"
-                  className={`${classes.large} ${classes.details}`}
-                  src={imageWork7}
-                ></Avatar>
-              </ListItemAvatar>
-              <ListItemText
-                primary="ネットショップ"
-                secondary="CyberAgentさんのインターンで作成したネットショップです。"
-              />
-              <Box display="flex">
-                <ListItemLink href="https://ca-wr-shop.herokuapp.com/">
-                  <img alt="github" src={imgGit} className={classes.img} />
-                </ListItemLink>
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
+        <Ca />
+        <FlutterTodo />
+        <EarShape />
+        <Calculator />
+        <Blog />
       </Box>
     </>
   );
