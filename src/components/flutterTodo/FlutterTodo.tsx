@@ -14,6 +14,7 @@ import Modal from "@material-ui/core/Modal";
 import Fade from "@material-ui/core/Fade";
 import Backdrop from "@material-ui/core/Backdrop";
 import FlutterModal from "./FlutterModal";
+import MoreIcon from "@material-ui/icons/More";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -90,9 +91,9 @@ const FlutterTodo: React.FC = () => {
             primary="レポート管理アプリ"
             secondary="大学の講義で出たレポートや課題を管理できます。"
           />
-          <CardActions>
+          <CardActions style={{ padding: 0 }}>
             <Button size="small" onClick={handleOpen}>
-              more info
+              <MoreIcon />
             </Button>
           </CardActions>
           <Modal

@@ -43,7 +43,7 @@ export default function ModalContent() {
             MemoChat
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            メモライクな見た目をした、チャットアプリです。技育祭をベースに作成しました。
+            メモライクな見た目をした、チャットアプリです。技育祭での使用を想定して作成しました。
           </Typography>
           <Typography
             gutterBottom

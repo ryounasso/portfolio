@@ -14,6 +14,9 @@ import Modal from "@material-ui/core/Modal";
 import Fade from "@material-ui/core/Fade";
 import Backdrop from "@material-ui/core/Backdrop";
 import BlogModal from "./BlogModal";
+import LinkIcon from "@material-ui/icons/Link";
+import Link from "@material-ui/core/Link";
+import MoreIcon from "@material-ui/icons/More";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,6 +58,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: theme.shadows[5],
     //   padding: theme.spacing(2, 4, 3),
   },
+  link: {
+    color: "black",
+    backgroundColor: "white",
+  },
 }));
 
 function ListItemLink(props: ListItemProps<"a", { button?: true }>) {
@@ -87,9 +94,9 @@ const Blog: React.FC = () => {
             ></Avatar>
           </ListItemAvatar>
           <ListItemText primary="ブログ" secondary="個人ブログです。" />
-          <CardActions>
+          <CardActions style={{ padding: 0 }}>
             <Button size="small" onClick={handleOpen}>
-              more info
+              <MoreIcon />
             </Button>
           </CardActions>
           <Modal
@@ -111,6 +118,11 @@ const Blog: React.FC = () => {
             </Fade>
           </Modal>
           <Box display="flex">
+            <Link href="https://blog-ten-teal.vercel.app/" color="inherit">
+              <Avatar className={classes.link}>
+                <LinkIcon />
+              </Avatar>
+            </Link>
             <ListItemLink href="https://github.com/ryounasso/blog">
               <img alt="github" src={imgGit} className={classes.img} />
             </ListItemLink>

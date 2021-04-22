@@ -14,6 +14,9 @@ import Modal from "@material-ui/core/Modal";
 import Fade from "@material-ui/core/Fade";
 import Backdrop from "@material-ui/core/Backdrop";
 import ModalContent from "./ModalContent";
+import LinkIcon from "@material-ui/icons/Link";
+import Link from "@material-ui/core/Link";
+import MoreIcon from "@material-ui/icons/More";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,6 +58,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: theme.shadows[5],
     //   padding: theme.spacing(2, 4, 3),
   },
+  link: {
+    color: "black",
+    backgroundColor: "white",
+  },
 }));
 
 function ListItemLink(props: ListItemProps<"a", { button?: true }>) {
@@ -90,9 +97,9 @@ const MemoChat: React.FC = () => {
             primary="memoChat"
             secondary="メモライクなチャットアプリです。"
           />
-          <CardActions>
+          <CardActions style={{ padding: 0 }}>
             <Button size="small" onClick={handleOpen}>
-              more info
+              <MoreIcon />
             </Button>
           </CardActions>
           <Modal
@@ -113,6 +120,14 @@ const MemoChat: React.FC = () => {
               </div>
             </Fade>
           </Modal>
+          <Link
+            href="https://guarded-eyrie-48747.herokuapp.com/"
+            color="inherit"
+          >
+            <Avatar className={classes.link}>
+              <LinkIcon />
+            </Avatar>
+          </Link>
           <Box display="flex">
             <ListItemLink href="https://github.com/ryounasso/hackson_07">
               <img alt="github" src={imgGit} className={classes.img} />

@@ -15,6 +15,7 @@ import Modal from "@material-ui/core/Modal";
 import Fade from "@material-ui/core/Fade";
 import Backdrop from "@material-ui/core/Backdrop";
 import EarShapeModal from "./EarShapeModal";
+import MoreIcon from "@material-ui/icons/More";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -103,9 +104,9 @@ const EarShape: React.FC = () => {
             primary="耳形認証アプリ"
             secondary="耳の形で誰かを当てます。"
           />
-          <CardActions>
+          <CardActions style={{ padding: 0 }}>
             <Button size="small" onClick={handleOpen}>
-              more info
+              <MoreIcon />
             </Button>
           </CardActions>
           <Modal

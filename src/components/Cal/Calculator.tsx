@@ -14,6 +14,9 @@ import Modal from "@material-ui/core/Modal";
 import Fade from "@material-ui/core/Fade";
 import Backdrop from "@material-ui/core/Backdrop";
 import ModalContent from "./ModalContent";
+import LinkIcon from "@material-ui/icons/Link";
+import Link from "@material-ui/core/Link";
+import MoreIcon from "@material-ui/icons/More";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -55,6 +58,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: theme.shadows[5],
     //   padding: theme.spacing(2, 4, 3),
   },
+  link: {
+    color: "black",
+    backgroundColor: "white",
+  },
 }));
 
 function ListItemLink(props: ListItemProps<"a", { button?: true }>) {
@@ -90,9 +97,9 @@ const Calculator: React.FC = () => {
             primary="計算履歴が残る電卓"
             secondary="iPhone純正の電卓は計算履歴が残らないので、残る電卓を作りました。"
           />
-          <CardActions>
+          <CardActions style={{ padding: 0 }}>
             <Button size="small" onClick={handleOpen}>
-              more info
+              <MoreIcon />
             </Button>
           </CardActions>
           <Modal
@@ -113,6 +120,11 @@ const Calculator: React.FC = () => {
               </div>
             </Fade>
           </Modal>
+          <Link href="https://ryounasso.github.io/calculater/" color="inherit">
+            <Avatar className={classes.link}>
+              <LinkIcon />
+            </Avatar>
+          </Link>
           <Box display="flex">
             <ListItemLink href="https://github.com/ryounasso/calculater">
               <img alt="github" src={imgGit} className={classes.img} />
