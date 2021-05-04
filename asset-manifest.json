@@ -1,29 +1,31 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/portfolio/static/js/main.7b961c6b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7b961c6b.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.451b4969.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.451b4969.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.1d471758.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.1d471758.js.map",
-    "static/js/2.d33c31f2.chunk.js": "/portfolio/static/js/2.d33c31f2.chunk.js",
-    "static/js/2.d33c31f2.chunk.js.map": "/portfolio/static/js/2.d33c31f2.chunk.js.map",
+    "static/js/2.cb40b645.chunk.js": "/portfolio/static/js/2.cb40b645.chunk.js",
+    "static/js/2.cb40b645.chunk.js.map": "/portfolio/static/js/2.cb40b645.chunk.js.map",
     "static/js/3.9690c0e1.chunk.js": "/portfolio/static/js/3.9690c0e1.chunk.js",
     "static/js/3.9690c0e1.chunk.js.map": "/portfolio/static/js/3.9690c0e1.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/portfolio/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.d33c31f2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d33c31f2.chunk.js.LICENSE.txt",
+    "static/js/2.cb40b645.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cb40b645.chunk.js.LICENSE.txt",
     "static/media/Auricle_authentication.a3d7cd52.png": "/portfolio/static/media/Auricle_authentication.a3d7cd52.png",
     "static/media/IMG_6322.f92cbb90.JPG": "/portfolio/static/media/IMG_6322.f92cbb90.JPG",
     "static/media/blog.70284efc.png": "/portfolio/static/media/blog.70284efc.png",
     "static/media/ca-wr-shop.8de72ff5.png": "/portfolio/static/media/ca-wr-shop.8de72ff5.png",
     "static/media/calculator.032719f6.jpg": "/portfolio/static/media/calculator.032719f6.jpg",
+    "static/media/daily.757486e0.png": "/portfolio/static/media/daily.757486e0.png",
     "static/media/memochat.fa529ff4.png": "/portfolio/static/media/memochat.fa529ff4.png",
+    "static/media/smile.e3b45e47.png": "/portfolio/static/media/smile.e3b45e47.png",
     "static/media/todo.63e747b6.png": "/portfolio/static/media/todo.63e747b6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1d471758.js",
-    "static/js/2.d33c31f2.chunk.js",
+    "static/js/2.cb40b645.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.7b961c6b.chunk.js"
+    "static/js/main.451b4969.chunk.js"
   ]
 }
