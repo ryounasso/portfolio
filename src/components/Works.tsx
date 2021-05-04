@@ -17,6 +17,8 @@ import FlutterTodo from "./flutterTodo/FlutterTodo";
 import Blog from "./blog/Blog";
 import EarShape from "./earShape/EarShape";
 import Ca from "./ca/Ca";
+import DailyReport from "./dailyReport/DailyReport";
+import SmileApp from "./smileApp/SmileApp";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -73,6 +75,8 @@ const Works: React.FC = () => {
           <Typography className={classes.topic}>Works</Typography>
         </Box>
         <MemoChat />
+        <DailyReport />
+        <SmileApp />
         <Box display="flex" justifyContent="center" p={1}>
           <List className={classes.root}>
             <ListItem>
