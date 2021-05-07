@@ -77,7 +77,7 @@ const Works: React.FC = () => {
         <MemoChat />
         <DailyReport />
         <SmileApp />
-        <Box display="flex" justifyContent="center" p={1}>
+        {/* <Box display="flex" justifyContent="center" p={1}>
           <List className={classes.root}>
             <ListItem>
               <ListItemAvatar>
@@ -98,7 +98,7 @@ const Works: React.FC = () => {
               </Box>
             </ListItem>
           </List>
-        </Box>
+        </Box> */}
         <Ca />
         <FlutterTodo />
         <EarShape />
