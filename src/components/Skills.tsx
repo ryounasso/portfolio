@@ -46,7 +46,7 @@ const Skills: React.FC = () => {
             <CardContent>
               <Typography variant="h6">Frameworks</Typography>
               <Typography color="textSecondary">
-                React / Django / Flutter / tailwind css / Vue.js
+                React / Django / Flutter / tailwind css / Vue.js / Next.js
               </Typography>
             </CardContent>
           </Card>
