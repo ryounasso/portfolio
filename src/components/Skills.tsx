@@ -36,7 +36,7 @@ const Skills: React.FC = () => {
             <CardContent>
               <Typography variant="h6">Languages</Typography>
               <Typography color="textSecondary">
-                JavaScript / Java / C / Python / TypeScript / Sass
+                JavaScript / Java / C / Python / TypeScript / Ruby / Sass
               </Typography>
             </CardContent>
           </Card>
